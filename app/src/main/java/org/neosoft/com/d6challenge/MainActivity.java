@@ -67,7 +67,13 @@ public class MainActivity extends AppCompatActivity {
                         mResult = mResult4;
                     }
                 }
-                result.setText(mResult+" Selected");
+
+                if (!c1&&!c2&&!c3&&!c4){
+                    result.setText("Select at least one check box");
+                }else{
+                    result.setText(mResult+" Selected");
+                }
+
             }
         });
     }
